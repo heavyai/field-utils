@@ -16,7 +16,7 @@ services:
     volumes:
       - ~/.cache/huggingface:/root/.cache/huggingface
     environment:
-      - HUGGING_FACE_HUB_TOKEN=xxxxxxxxxxxxx
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
     ports:
       - "5000:5000"
     ipc: host
